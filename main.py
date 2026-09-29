@@ -2,8 +2,6 @@ from member_manager import load_members, add_member, view_members, search_member
 from attendance import mark_attendance, view_attendance
 from payment import add_payment, view_payments
 from report import show_summary
-
-
 def show_menu():
     print("\n==============================")
     print("       GYM MANAGEMENT")
@@ -19,7 +17,6 @@ def show_menu():
     print("9. Show gym summary")
     print("10. Exit")
     print("==============================")
-
 
 def main():
     members = load_members()
@@ -51,6 +48,4 @@ def main():
             break
         else:
             print("Invalid choice. Please try again.")
-
-
 main()
